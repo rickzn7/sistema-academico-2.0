@@ -1,0 +1,99 @@
+ 
+ 
+ /*Abaixo códigos para estilação dos menus / submenus */
+ 
+/* Define a estilização para o menu principal */
+ul.menu {
+    background-color: black; /* Define a cor de fundo do menu principal */
+    display: flex; /* Exibe os itens do menu lado a lado */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o espaçamento interno */
+	width: 100%;
+    
+    
+}
+
+/* Estilização para os itens do menu principal */
+ul.menu li.menu-item {
+    position: relative; /* Permite posicionar os submenus corretamente */
+    margin-right: 20px; /* Define o espaçamento entre os itens do menu */
+}
+
+/* Estilização para os links dos itens do menu principal */
+ul.menu li a {
+    color: white; /* Define a cor do texto do menu principal */
+    padding: 10px; /* Define o espaçamento interno */
+    text-decoration: none; /* Remove a decoração de texto */
+    display: block; /* Faz com que o link ocupe a largura total do item do menu */
+}
+
+/* Define o estilo dos submenus e oculta-os inicialmente */
+ul.menu li .submenu {
+    display: none; /* Esconde os submenus por padrão */
+    position: absolute; /* Permite posicionar os submenus de forma absoluta */
+    background-color: black; /* Define a cor de fundo dos submenus */
+    width: 200px; /* Define a largura dos submenus */
+    padding: 10px; /* Define o espaçamento interno dos submenus */
+    list-style: none; /* Remove os marcadores de lista */
+    top: 90%; /* Posiciona o submenu abaixo do item do menu principal */
+    left: 0; /* Alinha o submenu com o lado esquerdo do item do menu principal */
+    z-index: 2; /* Define a ordem de empilhamento, acima do conteúdo */
+}
+
+/* Mostra o submenu quando o item do menu principal é hoverado */
+ul.menu li.menu-item:hover > .submenu {
+    display: block; /* Exibe o submenu ao passar o mouse no item do menu principal */
+}
+
+/* Estilização para os itens dentro dos submenus */
+ul.submenu li {
+    display: block; /* Exibe os itens dos submenus como blocos */
+}
+
+/* Estilização para os links dentro dos submenus */
+ul.submenu li a {
+    color: white; /* Define a cor do texto dos submenus */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
+/* Adicione margens à tabela */
+        table {
+            margin: 20px;
+            border-collapse: collapse; /* Mescla as bordas da tabela */
+        }
+        th, td {
+            border: 1px solid black; /* Adicione bordas às células */
+            padding: 5px; /* Adicione espaço interno às células */
+        }
+
+
+
+        ----------------------
+
+
+
+        header {
+            background-color: #392269;
+            padding-inline: 16px;
+        }
+        
+        .nav {
+            max-width: 1280px;
+            height: 70px;
+            margin-inline: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .menu {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        
+        .menu a {
+            font-size: 18px;
+            color: #fff;
+            padding-block: 16px;
+        }
